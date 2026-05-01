@@ -29,10 +29,11 @@ function App() {
   }
   `
 
+  // note to self: do more components
 
-  // want to clarify, that emojiU doesn't really work, because Chrome doesn't really allow flags anymore for some reason,
+  // reason: want to clarify, that emojiU doesn't really work, because Chrome doesn't really allow flags anymore for some reason,
   // more like these acronyms for them instead. But they still function as a emoji, they are technically still the flag emojis
-  // (they act like a single thing, nor actual letters, and show up when you copy them into google as a emoji search), so 👍👍
+  // (they act like a single thing, nor actual letters, and show up when you copy them into google as a emoji search), so it works? 👍👍
 
   //example url, search of 🇼🇫, 'Wallis and Futuna', https://www.google.com/search?q=%F0%9F%87%BC%F0%9F%87%AB&oq=%F0%9F%87%BC%F0%9F%87%AB&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIMCAUQABgUGIcCGIAEMgcIBhAAGIAEMgcIBxAAGO8F0gEHMzAwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
 
@@ -55,7 +56,7 @@ function App() {
       <div className="grid" className="container">
         {countries.map(country => (
           <div
-            key={country.name}
+            key={country.name} //display information on card
             className="card"
             onClick={() => setSelectedCountry(country)}
           >
@@ -68,12 +69,12 @@ function App() {
       </div>
 
 
-
+      
       {selectedCountry && (
         <div className="modal">
           <div className="modal-content">
-            <button onClick={() => setSelectedCountry(null)}>Close</button>
-
+            <button onClick={() => setSelectedCountry(null)}>Close</button> 
+          
             <h2>
               {unicodeToEmoji(selectedCountry.emojiU)} {selectedCountry.name}
             </h2>
