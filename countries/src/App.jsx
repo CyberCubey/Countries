@@ -63,9 +63,9 @@ function App() {
 
             <h2>{unicodeToEmoji(country.emojiU)}</h2>
             <p>{country.name}</p>
-          </div>
+          </div> // /*IAC means INTERNATIONAL ACCESS CODE, i.e. the ID code e.g. '+45'*/
         ))}
-
+      
       </div>
 
 
@@ -80,7 +80,7 @@ function App() {
             </h2>
 
             <p><b>Currency:</b> {selectedCountry.currency || "None"}</p>
-            <p><b>Phone code:</b> +{selectedCountry.phone}</p>
+            <p><b>Phone-IAC:</b> +{selectedCountry.phone}</p>
 
             <p>
               <b>Languages:</b>{" "}
