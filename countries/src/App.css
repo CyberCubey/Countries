@@ -1,0 +1,115 @@
+body{
+margin:0;
+font-family:Arial;
+background-image: url("./public/map2.png"); /*couldn't choose which map background I wanted, so I added three to change*/
+min-height: 100vh;
+
+background-repeat: repeat;
+background-size: auto;
+background-position: top left;
+}
+
+/*chose to make the background image grid,
+because doing it to fill/center the entire page, makes the background image blurry and zoom in a-lot to barely see it really.
+But figured it works better with grid, by duplicating the same image at a better size, so 👍*/
+
+
+
+.app{
+text-align:center;
+padding:20px;
+}
+
+.container {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+
+.card{
+border:2px solid #124771;
+border-radius:10px;
+padding:15px;
+cursor:pointer;
+background:white;
+
+}
+
+
+
+.card:hover{
+background:#d1ccdc;
+}
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+
+.modal-content{
+background:rgb(255, 255, 255);
+border:2px solid #000000;
+
+padding:25px;
+border-radius:10px;
+width:300px;
+}
+
+
+.close{
+float:right;
+}
+
+
+footer{
+margin-top:40px;
+font-style: oblique;
+background:rgb(230, 230, 231);
+
+width:100%;
+padding:20px;
+
+margin-top:40px;
+text-align:center;
+border-top:1px solid #ddd;
+
+}
+
+
+footer a {
+  color: black; /*just changed the color, wanted to keep the blue underline*/
+  text-decoration-line: underline;
+  text-decoration-color: rgb(64, 64, 176);
+}
+
+footer a:visited {
+  color: black; /*don't want it to be purple*/
+}
+
+
+
+
+
+
+
+
