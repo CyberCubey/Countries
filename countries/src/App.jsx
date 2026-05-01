@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+// import style from "App.css" (breaks everything in errors)
 const API = "https://countries.trevorblades.com/graphql"
 
 
