@@ -30,7 +30,7 @@ function App() {
   `
 
   // want to clarify, that emojiU doesn't really work, because Chrome doesn't really allow flags anymore for some reason,
-  // more like these acronyms for them instead. But they still function as a emoji, they are technically still emojis
+  // more like these acronyms for them instead. But they still function as a emoji, they are technically still the flag emojis
   // (they act like a single thing, nor actual letters, and show up when you copy them into google as a emoji search), so 👍👍
 
   //example url, search of 🇼🇫, 'Wallis and Futuna', https://www.google.com/search?q=%F0%9F%87%BC%F0%9F%87%AB&oq=%F0%9F%87%BC%F0%9F%87%AB&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIMCAUQABgUGIcCGIAEMgcIBhAAGIAEMgcIBxAAGO8F0gEHMzAwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
