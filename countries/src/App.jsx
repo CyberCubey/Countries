@@ -29,6 +29,7 @@ function App() {
   }
   `
 
+
   // want to clarify, that emojiU doesn't really work, because Chrome doesn't really allow flags anymore for some reason,
   // more like these acronyms for them instead. But they still function as a emoji, they are technically still the flag emojis
   // (they act like a single thing, nor actual letters, and show up when you copy them into google as a emoji search), so 👍👍
@@ -63,6 +64,7 @@ function App() {
             <p>{country.name}</p>
           </div>
         ))}
+
       </div>
 
 
@@ -82,11 +84,11 @@ function App() {
             <p>
               <b>Languages:</b>{" "}
               {selectedCountry.languages.length > 0
-              ? selectedCountry.languages.map(l => l.name).join(", "): "None"}
+              ? selectedCountry.languages.map(l => l.name).join(", "): "None"} 
           </p>
           </div>
 
-        </div>
+        </div> // tells what the api to fetch and display // needed help from Copilot to help figure out languages code
       )}
 
     
