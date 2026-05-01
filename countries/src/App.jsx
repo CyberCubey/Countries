@@ -88,7 +88,8 @@ function App() {
           </p>
           </div>
 
-        </div> // tells what the api to fetch and display // needed help from Copilot to help figure out languages code
+        </div> // tells what the api to fetch and display // language: needed help from Copilot to help figure out languages code,
+        // cause I couldn't get it to function properly, and apparently needed a different seperate code from the others
       )}
 
     

@@ -17,7 +17,7 @@ But figured it works better with grid, by duplicating the same image at a better
 
 html, body {
   overflow-x: hidden;
-} /*disabled horizontal scrollbar, because I was tired of it*/
+} /*disabled horizontal scrollbar, because I was tired of it moving around my page*/
 
 
 .container {
